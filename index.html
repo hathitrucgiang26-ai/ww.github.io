@@ -1,0 +1,62 @@
+html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一个网站</title>
+    <!-- 链接CSS文件 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 链接JavaScript文件 -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>欢迎来到我的网站！</h1>
+            <p>这是我学习网页开发的第一步</p>
+            <button id="welcomeBtn">点我打招呼</button>
+        </section>
+
+        <section id="about" class="content">
+            <h2>关于这个网站</h2>
+            <div class="card">
+                <h3>技术栈</h3>
+                <ul>
+                    <li>HTML - 网页结构</li>
+                    <li>CSS - 网页样式</li>
+                    <li>JavaScript - 交互功能</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>学习目标</h3>
+                <p>掌握基础网页开发技能</p>
+            </div>
+        </section>
+
+        <section id="contact" class="content">
+            <h2>联系我</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="你的名字" required>
+                <input type="email" placeholder="邮箱地址" required>
+                <textarea placeholder="留言..." rows="4"></textarea>
+                <button type="submit">发送</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 我的第一个网站 | 学习愉快！</p>
+    </footer>
+</body>
+</html>
